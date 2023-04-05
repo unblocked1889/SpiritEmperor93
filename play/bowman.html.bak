@@ -8,7 +8,7 @@
   <script src="https://unblocked1889.github.io/ruffleplay/ruffle.js"></script>
   <script>
 const player = RufflePlayer.create(
-  document.getElementById("https://unblocked1889.github.io/ruffleplay/swf/bowman.swf"),
+  document.getElementById("my-swf"),
   {
     // Cấu hình tùy chọn của Ruffle
     backgroundColor: "#ffffff", // Màu nền cho tệp SWF
@@ -25,6 +25,6 @@ const player = RufflePlayer.create(
 
     player.load("https://unblocked1889.github.io/ruffleplay/swf/bowman.swf");
   </script>
-  <div id="bowman.swf"></div>
+  <div id="my-swf"></div>
 </body>
 </html>
