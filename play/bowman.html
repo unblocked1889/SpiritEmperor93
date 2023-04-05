@@ -6,8 +6,16 @@
 </head>
 <body>
   <script src="https://unblocked1889.github.io/ruffleplay/ruffle.js"></script>
-<div class="swf"dir="ltr" style="text-align: left;" trbidi="on">
-        <embed pluginspage=" http://www.macromedia.com/go/getflashplayer" src="https://unblocked1889.github.io/ruffleplay/swf/bowman.swf" type="application/x-shockwave-flash" width="100%" height="100%"></embed>
-</div>
+  <script>
+    const player = RufflePlayer.create(
+      document.getElementById("http://www.macromedia.com/go/getflashplayer"),
+      {
+        // Cấu hình tùy chọn của Ruffle
+      }
+    );
+
+    player.load("https://unblocked1889.github.io/ruffleplay/swf/bowman.swf");
+  </script>
+  <div id="bowman"></div>
 </body>
 </html>
