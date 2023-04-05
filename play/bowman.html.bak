@@ -5,26 +5,8 @@
   <title>My Ruffle Page</title>
 </head>
 <body>
-  <script src="https://unblocked1889.github.io/ruffleplay/ruffle.js"></script>
-  <script>
-    const player = RufflePlayer.create(
-      document.getElementById("bowman.swf"),
-      {
-        // Cấu hình tùy chọn của Ruffle
-        backgroundColor: "#ffffff", // Màu nền cho tệp SWF
-        frameRate: 60, // Tốc độ khung hình của tệp SWF
-        scaleFactor: "showall", // Tùy chọn độ phóng to thu nhỏ của tệp SWF
-        autoplay: true, // Tự động phát lại tệp SWF khi trang web được tải lên
-        loop: false, // Tự động lặp lại tệp SWF khi nó kết thúc
-        onfinish: () => { /* Xử lý sự kiện khi tệp SWF kết thúc */ },
-        onready: () => { /* Xử lý sự kiện khi tệp SWF đã sẵn sàng để phát lại */ },
-        onerror: (error) => { /* Xử lý lỗi khi phát lại tệp SWF */ },
-        // và nhiều tùy chọn khác
-      }
-    );
-
-    player.replace("https://unblocked1889.github.io/ruffleplay/swf/bowman.swf");
-  </script>
-  <div id="bowman.swf"></div>
+<script src="https://unblocked1889.github.io/ruffleplay/ruffle.js"></script>
+<div class="swf"dir="ltr" style="text-align: left;" trbidi="on">
+        <embed pluginspage=" http://www.macromedia.com/go/getflashplayer" src="https://unblocked1889.github.io/ruffleplay/swf/bowman.swf" type="application/x-shockwave-flash" width="100%" height="100%"></embed>
 </body>
 </html>
