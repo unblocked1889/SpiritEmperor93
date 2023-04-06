@@ -4,6 +4,12 @@
   </ModulePrefs>
 <Content type="html" view="home">
 <![CDATA[ 
+
+
+    <head>
+        <meta charset='utf-8'>
+    </head>
+    <body>
         <div id='ruffle'></div>
         <script src='https://funblocked.bar/ruffle/ruffle.js'></script>
         <script>
@@ -22,6 +28,8 @@ swfobject.embedSWF = function(url, cont, width, height){
 
 swfobject.embedSWF('https://funblocked.bar/ruffle/swf/13dayinhell.swf', 'ruffle', 800, 600);
         </script>
+    </body>
+
 <style>
 body {
 background:#eee;

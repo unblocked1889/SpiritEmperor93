@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset='utf8'>
+    </head>
+    <body>
+        <div id='ruffle' style="text-align: center;"></div>
+        <script src='https://funblocked.bar/ruffle/ruffle.js'></script>
+        <script>
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
+        window.RufflePlayer.config = {
+    // Options affecting the whole page
+    "publicPath": undefined,
+    "polyfills": true,
+
+    // Options affecting files only
+    "autoplay": "on",
+    "unmuteOverlay": "hidden",
+    "backgroundColor": "#000000",
+    "letterbox": "fullscreen",
+    "warnOnUnsupportedContent": true,
+    "contextMenu": false,
+    "showSwfDownload": false,
+    "upgradeToHttps": window.location.protocol === "https:",
+    "maxExecutionDuration": {"secs": 15, "nanos": 0},
+    "logLevel": "error",
+    "base": null,
+    "menu": true,
+    "salign": "",
+    "scale": "showAll",
+    "quality": "High",
+    "preloader": true,
+};
+    
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('https://funblocked.bar/ruffle/swf/13dayinhell.swf', 'ruffle', 890, 529);
+        </script>
+    </body>
+</html>
+    </div>
