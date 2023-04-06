@@ -1,16 +1,10 @@
-﻿<Module>
-<ModulePrefs title="13 day" description=""  author="Mori" author_email="">
-  <Require feature="setprefs" /> 
-  </ModulePrefs>
-<Content type="html" view="home">
-<![CDATA[ 
-
-
+<!DOCTYPE HTML>
+<html>
     <head>
-        <meta charset='utf-8'>
+        <meta charset='utf8'>
     </head>
     <body>
-        <div id='ruffle'></div>
+        <div id='ruffle' style="text-align: center;"></div>
         <script src='https://funblocked.bar/ruffle/ruffle.js'></script>
         <script>
 var swfobject = {};
@@ -22,23 +16,35 @@ swfobject.embedSWF = function(url, cont, width, height){
             height: height,
             style: 'width: ' + width + 'px; height: ' + height + 'px',
         });
+        window.RufflePlayer.config = {
+    // Options affecting the whole page
+    "publicPath": undefined,
+    "polyfills": true,
+
+    // Options affecting files only
+    "autoplay": "on",
+    "unmuteOverlay": "hidden",
+    "backgroundColor": "#000000",
+    "letterbox": "fullscreen",
+    "warnOnUnsupportedContent": true,
+    "contextMenu": false,
+    "showSwfDownload": false,
+    "upgradeToHttps": window.location.protocol === "https:",
+    "maxExecutionDuration": {"secs": 15, "nanos": 0},
+    "logLevel": "error",
+    "base": null,
+    "menu": true,
+    "salign": "",
+    "scale": "showAll",
+    "quality": "High",
+    "preloader": true,
+};
     
     player.load({ url: url });
 }
 
-swfobject.embedSWF('https://funblocked.bar/ruffle/swf/13dayinhell.swf', 'ruffle', 800, 600);
+swfobject.embedSWF('https://funblocked.bar/ruffle/swf/13dayinhell.swf', 'ruffle', 890, 529);
         </script>
     </body>
-
-<style>
-body {
-background:#eee;
-margin-top:0;
-margin-left:0;
-color:#EEEEEE;
-font-size:11px;
-}
- </style>
-  ]]> 
-  </Content>
-  </Module>
+</html>
+    </div>
